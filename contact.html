@@ -1,0 +1,77 @@
+
+<html>
+<head>
+	<title>Greenden</title>
+	 <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+	<!--Navbar-->
+	<nav class="bg-green-100 p-3 flex items-center justify-between shadow-xl sticky top-0 z-20">
+		<h1 class="text-2xl font-bold">GREENDEN</h1>
+		
+		<svg id="menuicon" style="cursor:pointer" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6 md:hidden">
+			<path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+		</svg>
+
+		<ul class="flex gap-5 text-gray-600 hidden md:flex">
+			<li class="hover:underline hover:text-black">	
+				<a href="index.html">HOME</a>
+			</li>
+			<li class="hover:underline hover:text-black">
+				<a href="product.html">PRODUCT</a>
+			</li>
+			<li class="hover:underline hover:text-black">
+				<a href="contact.html">CONTACT</a>
+			</li>
+		</ul>
+	</nav>
+	
+	<!--Side Navbar-->
+	<section id="sidenav" class="bg-green-100 fixed z-20 top-0 transition-all duration-1000 " style="width:50%; height:100vh; right:-150%">
+		<div class="text-bold text-right p-5">
+			<p id="closenav" class="inline cursor-pointer">X</p>
+		</div>
+		<ul class="flex flex-col items-center gap-10 text-gray-600">
+			<li class="hover:underline hover:text-black">
+				<a href="index.html">HOME</a>
+			</li>
+			<li class="hover:underline hover:text-black">
+				<a href="product.html">PRODUCT</a>
+			</li>
+			<li class="hover:underline hover:text-black">
+				<a href="contact.html">CONTACT</a>
+			</li>
+		</ul>
+	</section>
+	
+	<!--Contact Form-->
+    <section class="mt-5 p-10 z-1">
+        <h1 class="font-bold text-3xl text-center md:text-4xl">Contact Us</h1>
+		<p class=" text-gray-600 text-center mt-3" style="opacity: 0.4;">Got a technical issue? Want to send feedback about a beta feature? Need details about our business plan? Let us know</p>
+		<div class="ml-20 mt-10 p-0 md:p-2">
+          <p class="font-medium">Your Email</p>
+		  <input class="border p-2 rounded-md mt-1" placeholder="name@gmail.com" style="width: 80%;">
+        </div>
+		<div class="ml-20 mt-10 p-0 md:p-2">
+          <p class="font-medium">Your Subject</p>
+		  <input class="border p-2 rounded-md mt-1" placeholder="Let us know how we can help you" style="width: 80%;">
+        </div>
+		<div class="ml-20 mt-10 p-0 md:p-2">
+          <p class="font-medium">Your Message</p>
+		  <textarea class="border p-2 rounded-md mt-1" placeholder="Leave a Comment" style="width: 80%;"></textarea>
+        </div>
+		<div class="text-center">
+		<button class="bg-black text-white hover:underline p-2 mt-5 border rounded-md">Submit</button>
+		</div>
+    </section>
+	
+	<!--Footer-->
+	<section class="mt-5 bg-green-100 p-10 flex flex-col gap-5">
+		<h1 class="font-bold text-4xl">GREENDEN</h1>
+		<p>Discover a wide assortment of stylish indoor plant pots designed to bring life and charm to any interior space.</p>
+		<p>@2025 greenday.com</p>
+	</section>
+</body>
+<script src="script.js">
+</script>
+</html>
